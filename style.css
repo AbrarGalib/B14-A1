@@ -1,3 +1,30 @@
 body{
+    margin: 0;
     background-color: antiquewhite;
+}
+.common-btn{
+    background: #2563eb;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+nav{
+   display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background: white;
+}
+nav ul {
+     list-style: none;
+    display: flex;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+}
+nav a{
+    text-decoration: none;
+    color: #575757;
 }
