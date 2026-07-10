@@ -1,30 +1,103 @@
-body{
-    margin: 0;
-    background-color: antiquewhite;
+* {
+  font-family: "Inter", sans-serif;
+  margin: 0;
 }
-.common-btn{
-    background: #2563eb;
-    color: white;
-    border: none;
-    padding: 12px 24px;
-    border-radius: 8px;
-    cursor: pointer;
+
+.common-btn {
+  background: #2563eb;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 8px;
+  cursor: pointer;
 }
-nav{
-   display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 50px;
-    background: white;
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+  background: white;
 }
 nav ul {
-     list-style: none;
-    display: flex;
-    gap: 30px;
-    margin: 0;
-    padding: 0;
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
 }
-nav a{
-    text-decoration: none;
-    color: #575757;
+nav a {
+  text-decoration: none;
+  color: #575757;
+}
+
+/* header style */
+.hero {
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.5)),
+    url("./assets/banner.jpg");
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  text-align: center;
+  color: white;
+}
+.hero h1 {
+  font-size: 80px;
+  margin-bottom: 10px;
+}
+.hero p {
+  font-size: 22px;
+  margin-bottom: 170px;
+}
+.hero button {
+  margin-top: 60px;
+  font-size: 24px;
+  font-weight: 600;
+  padding: 20px 50px;
+}
+
+/* speaker css */
+.speakers {
+  padding: 80px 10%;
+}
+.speakers h2 {
+  text-align: center;
+  font-size: 56px;
+  margin-bottom: 50px;
+}
+.speaker-grid {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25px;
+}
+.card {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  background: white;
+  overflow:hidden;
+}
+.card img {
+  width: 100%;
+  object-fit: cover;
+}
+.card-info {
+  padding: 20px;
+}
+.card-info span {
+  color: #2563eb;
+  font-size: 12px;
+  font-weight: bold;
+}
+.card-info h3 {
+  margin: 12px 0;
+  font-size: 20px;
+}
+.card-info p {
+  color: #575757;
+  font-size: 14px;
+  margin: 0;
 }
