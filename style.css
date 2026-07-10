@@ -2,7 +2,7 @@
   font-family: "Inter", sans-serif;
   margin: 0;
 }
-
+/* common css */
 .common-btn {
   background: #2563eb;
   color: white;
@@ -11,6 +11,23 @@
   border-radius: 8px;
   cursor: pointer;
 }
+.outline-btn {
+  background: #ffffff;
+  color: #0d1b2a;
+  border: 1px solid #0d1b2a;
+  padding: 12px 24px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.blue-outline-btn {
+  background: #ffffff;
+  color: #2563eb;
+  border: 1px solid #2563eb;
+  padding: 12px 24px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+/* nav css */
 nav {
   display: flex;
   justify-content: space-between;
@@ -78,7 +95,7 @@ nav a {
   border: 1px solid #ddd;
   border-radius: 10px;
   background: white;
-  overflow:hidden;
+  overflow: hidden;
 }
 .card img {
   width: 100%;
@@ -100,4 +117,87 @@ nav a {
   color: #575757;
   font-size: 14px;
   margin: 0;
+}
+
+/* price section css */
+.pricing-section {
+  padding: 70px 40px;
+}
+.heading {
+  text-align: center;
+  margin-bottom: 50px;
+}
+.heading h1 {
+  font-size: 48px;
+  margin-bottom: 15px;
+}
+.heading p {
+  font-size: 16px;
+  color: #575757;
+}
+.pricing-container {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+}
+.price-card {
+  width: 370px;
+  height: 440px;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 32px;
+  background: white;
+}
+.price-card.active {
+  background: #0d1b2a;
+}
+.plan {
+  color: #888888;
+  font-size: 13px;
+  font-style: semibold;
+}
+.plan.blue {
+  color: #93c5fd;
+}
+.price-card h2 {
+  font-size: 44px;
+}
+.small {
+  font-size: 13px;
+  color: #888888;
+}
+.price-card.active h2 {
+  color: white;
+}
+hr {
+  margin: 25px 0;
+}
+.features {
+  margin-bottom: 25px;
+  padding-left: 20px;
+}
+.features-active {
+  margin-bottom: 25px;
+  padding-left: 20px;
+}
+.features li {
+  color: #333333;
+  font-size: 14px;
+  margin-bottom: 16px;
+ 
+}
+.features-active li {
+  color: white;
+  font-size: 14px;
+  margin-bottom: 16px;
+}
+.pricing-container button {
+  width: 100%;
+  margin-top: 20px;
+}
+.features li::marker {
+  color: #2563eb;
+}
+.features-active li::marker {
+  color: #60a5fa;
 }
